@@ -1,0 +1,32 @@
+Express tutorial
+----------------
+1. first we need to create a new node application - npm init --y
+this creates the package.json file
+2. now we can install express - npm install express --save
+3. we install nodemon in order to run the server - npm install -g nodemon
+4. after installing nodemon we need to verify in the package.json file under "main" that it routs to the starting point of our app(entry file) - in our case to app.js
+5. We need to setup a template enging - in this case will use Pug
+Steps to Using Pug
+------------------
+- Download Pug with npm: npm install pug --save
+- Update code in app to use Pug
+- Create templates
+- Render templates with reponse.render()
+
+Additional Installs (MiddleWare)
+--------------------------------
+npm install body-parser --save
+npm install cookie-parser --save
+
+MongoDB and Express
+--------------------
+Mongoose is the most popular ODM(Object Data Modeling) to work with Express and MongoDB
+an ODM simplifies the process of adding, searching and updating records in a document based database
+
+To install mongoose: npm install --save mongoose
+
+Express Sessions and Cookies
+----------------------------
+npm install express-session --save
+https://github.com/expressjs/session (it stores sessoins in the server RAM which might be an issue if you have a lot of users login in to your site)
+https://github.com/expressjs/session#compatible-session-stores
